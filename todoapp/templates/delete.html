@@ -1,0 +1,6 @@
+<h3>Delete confirmation for: {{item}}</h3>
+<form action="" method="post">
+{% csrf_token %}
+<button><a href="{%url 'index'%}">Cancel</a></button>
+<button type="submit" name='Confirm'>Confirm</button>
+</form>
